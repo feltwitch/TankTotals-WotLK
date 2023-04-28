@@ -22,11 +22,29 @@ TankTotals.ClassModule = nil;
 TankTotals.PlayerQuickHealth = 0;
 TankTotals.PlayerQuickHealthMax = 0;
 
+local playerLevel = UnitLevel("player");
+local playerLevelFlooredToTens = math.floor(playerLevel / 10) * 10;
+
+local ratingConversions = {
+        hit = {
+                [70] = 15.7722,
+                [80] = 32.78998947,
+        },
+        defense = {
+                [70] = 2.36634,
+                [80] = 4.918498039,
+        },
+        expertise = {
+                [70] = 3.94366,
+                [80] = 8.1974973675,
+        }
+}
+
 -- constants
 TankTotals.MISS_PER_DEF_SKILL = 0.04;
-TankTotals.HIT_RATING_PERCENT = 32.78998947;
-TankTotals.DEF_RATING_PER_SKILL = 4.918498039;
-TankTotals.EXP_RATING_PER_SKILL = 8.1974973675;
+TankTotals.HIT_RATING_PERCENT = ratingConversions.hit[playerLevelFlooredToTens];
+TankTotals.DEF_RATING_PER_SKILL = ratingConversions.defense[playerLevelFlooredToTens];
+TankTotals.EXP_RATING_PER_SKILL = ratingConversions.expertise[playerLevelFlooredToTens];
 
 -- constants for NEH table indices
 TankTotals.INDEX_BLEED = 0; TankTotals.INDEX_MELEE = 1;
@@ -265,7 +283,7 @@ TankTotals.ConfigTable =
 		},
 
 		Damage =
-		{	
+		{
 			order = 2,
 			type = "group",
 			name = L["SETTINGS_DAMAGE"],

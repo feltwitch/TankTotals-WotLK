@@ -49,8 +49,8 @@ if L then
 
                 L["NONTANK_MSG"] = "disabled due to non-tanking class.";
 
-		L["TITLE_BOSSES"] = "(Bosses)";
-		L["TITLE_NORMAL"] = "(vs 80s)";
+		L["TITLE_BOSSES"] = "(lvl + 3)";
+		L["TITLE_NORMAL"] = "(lvl + 0)";
 
 		L["AVOID_HEADING"] = "Avoidance:";
 		L["MIT_HEADING"] = "Mitigation:";
@@ -176,7 +176,7 @@ if L then
 		L["SETTINGS_STANDALONE_DESC"] = "enable or disable the display of the standalone window. If disabled, the TankTotals window will still be accessible via its DataBroker feed.";
 
 		L["SETTINGS_BOSSVALUES"] = "Boss Values";
-		L["SETTINGS_BOSSVALUES_DESC"] = "switch between standard values and vs Bosses (80-83)";
+		L["SETTINGS_BOSSVALUES_DESC"] = "switch between standard values and vs Bosses (lvl+0 / lvl+3)";
 
 		L["SETTINGS_POPUP"] = "Show Only on Mouseover";
 		L["SETTINGS_POPUP_DESC"] = "shows the standalone display only when the mouse cursor is over the title bar";
