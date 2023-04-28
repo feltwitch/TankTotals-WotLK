@@ -1,0 +1,108 @@
+------------------------------------------------------------------------
+r316 | reynard_nordrassil | 2010-07-13 00:33:10 +0000 (Tue, 13 Jul 2010) | 17 lines
+Changed paths:
+   A /tags/4.20 (from /trunk:315)
+
+Tagging as release 4.20
+
+- Optionally show TankTotals heading, Avoidance, Mitigation, Bleed & Spell summary on the LDB plugin by toggling the Label and Text fields in your DataBroker display addon
+
+- new Block Total shows cumulative damage blocked during the most recent fight (warrior/paladin)
+
+- Raid Wall is now considered to be Divine Guardian (the raidwide damage reduction) rather than Divine Sacrifice (the party-wide damage redirect)
+
+- fixed a bug which could prevent Improved Defensive Stance from being credited with 6% spell mitigation
+
+- fixed a bug which could affect the accuracy of recorded Savage Defense uptime
+
+- fixed a bug in the Reset Stats button for Paladin/DK/Druid
+
+- Berserker Stance is 5% increased damage, not 10%
+
+- actually load the Russian translations, duh
+------------------------------------------------------------------------
+r315 | reynard_nordrassil | 2010-07-13 00:25:22 +0000 (Tue, 13 Jul 2010) | 3 lines
+Changed paths:
+   M /trunk/ClassModules/DeathKnight.lua
+   M /trunk/ClassModules/Druid.lua
+   M /trunk/ClassModules/Paladin.lua
+   M /trunk/ClassModules/Warrior.lua
+   M /trunk/Components/Settings.lua
+   M /trunk/Components/UI.lua
+   M /trunk/Components/Vars.lua
+   M /trunk/Localisation/TankTotals.de.lua
+   M /trunk/Localisation/TankTotals.en.lua
+   M /trunk/Localisation/TankTotals.es.lua
+   M /trunk/Localisation/TankTotals.fr.lua
+   M /trunk/Localisation/TankTotals.ru.lua
+   M /trunk/Localisation/TankTotals.spells.lua
+
+- per-fight Block Total for Paladins/Warriors
+- fixed Reset Stat buttons for Paladins/Warriors/DKs
+- always output stats to LDB, let the user decide to hide/show
+------------------------------------------------------------------------
+r314 | reynard_nordrassil | 2010-07-11 17:28:58 +0000 (Sun, 11 Jul 2010) | 2 lines
+Changed paths:
+   M /trunk/ClassModules/Druid.lua
+   M /trunk/ClassModules/Paladin.lua
+   M /trunk/ClassModules/Warrior.lua
+   M /trunk/Components/UI.lua
+
+- fixed Savage Defense uptime tracker
+- added per-fight total blocked amount to Warrior & Paladin
+------------------------------------------------------------------------
+r313 | reynard_nordrassil | 2010-07-11 05:24:29 +0000 (Sun, 11 Jul 2010) | 4 lines
+Changed paths:
+   M /trunk/ClassModules/Paladin.lua
+   M /trunk/ClassModules/Warrior.lua
+   M /trunk/Components/Settings.lua
+   M /trunk/Components/UI.lua
+   M /trunk/Components/Vars.lua
+   M /trunk/Localisation/TankTotals.de.lua
+   M /trunk/Localisation/TankTotals.en.lua
+   M /trunk/Localisation/TankTotals.es.lua
+   M /trunk/Localisation/TankTotals.fr.lua
+   M /trunk/Localisation/TankTotals.ru.lua
+   M /trunk/TankTotals.lua
+
+- fixed Defensive Stance spell mitigation detection
+- RaidWall is Divine Guardian rather than Divine Sacrifice
+- Berserker Stance is -5% mitigation, not -10%
+- display stats on LDB plugin
+------------------------------------------------------------------------
+r312 | reynard_nordrassil | 2010-07-05 22:46:14 +0000 (Mon, 05 Jul 2010) | 1 line
+Changed paths:
+   M /trunk/Libs/libs.xml
+
+- lib paths corrected
+------------------------------------------------------------------------
+r311 | reynard_nordrassil | 2010-07-05 18:03:52 +0000 (Mon, 05 Jul 2010) | 2 lines
+Changed paths:
+   D /trunk/Libs/AceAddon-3.0
+   D /trunk/Libs/AceConfig-3.0
+   D /trunk/Libs/AceConsole-3.0
+   D /trunk/Libs/AceEvent-3.0
+   D /trunk/Libs/AceGUI-3.0
+   D /trunk/Libs/AceGUI-3.0-SharedMediaWidgets
+   D /trunk/Libs/AceHook-3.0
+   D /trunk/Libs/AceLocale-3.0
+   D /trunk/Libs/AceTimer-3.0
+   D /trunk/Libs/CallbackHandler-1.0
+   D /trunk/Libs/LibCandyBar-3.0
+   D /trunk/Libs/LibDataBroker-1.1
+   D /trunk/Libs/LibQTip-1.0
+   D /trunk/Libs/LibSharedMedia-3.0
+   D /trunk/Libs/LibSink-2.0
+   D /trunk/Libs/LibStub
+   M /trunk/Localisation/TankTotals.ru.lua
+   M /trunk/Localisation/localisation.xml
+
+- updated ruRU localisation
+- actually load ruRU file on startup
+------------------------------------------------------------------------
+r310 | reynard_nordrassil | 2010-07-05 18:02:15 +0000 (Mon, 05 Jul 2010) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+
+- .pkgmeta for libs
+------------------------------------------------------------------------
