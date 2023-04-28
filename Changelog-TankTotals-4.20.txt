@@ -1,3 +1,8 @@
+r317 | feltwitch | 2023-04-28 10:12:00 +0000 (Fri, 28 Apr 2023) | ??? lines
+Release 4.21
+
+- Use player level, rounded down to 70 or 80, to determine rating conversions
+
 ------------------------------------------------------------------------
 r316 | reynard_nordrassil | 2010-07-13 00:33:10 +0000 (Tue, 13 Jul 2010) | 17 lines
 Changed paths:

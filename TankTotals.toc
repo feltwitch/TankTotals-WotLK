@@ -4,7 +4,7 @@
 ## SavedVariablesPerCharacter: TTPCDB
 ## Notes: A useful collection of tanking utilities. Written by Reynárd (Ghostlands EU).
 ## Author: Reynard (Lost of Ghostlands EU, lost-eu.com)
-## X-Curse-Packaged-Version: 4.20
+## X-Curse-Packaged-Version: 4.21
 ## X-Curse-Project-Name: TankTotals
 ## X-Curse-Project-ID: tank-totals
 ## X-Curse-Repository-ID: wow/tank-totals/mainline
