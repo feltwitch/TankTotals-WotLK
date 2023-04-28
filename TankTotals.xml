@@ -1,17 +1,17 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 
-<Include file="Libs\libs.xml" />
-<Script  file="Components\Settings.lua" />
-<Include file="Localisation\localisation.xml" />
+  <Include file="Libs\libs.xml" />
+  <Script  file="Components\Settings.lua" />
+  <Include file="Localisation\localisation.xml" />
 
-<Script file="Components\Vars.lua" />
-<Script file="Components\Utils.lua" />
-<Script file="Components\UI.lua" />
-<Script file="Components\NEH.lua" />
-<Script file="Components\QuickHealth.lua" />
+  <Script file="Components\Vars.lua" />
+  <Script file="Components\Utils.lua" />
+  <Script file="Components\UI.lua" />
+  <Script file="Components\NEH.lua" />
+  <Script file="Components\QuickHealth.lua" />
 
-<Include file="ClassModules\modules.xml" />
+  <Include file="ClassModules\modules.xml" />
 
 </Ui>
 
